@@ -14,11 +14,13 @@ const Header = () => {
   );
   return (
     <div>
-      <div className="flex justify-between items-center mx-4 h-full">
-        <p className="font-semibold">CITATION ET ANNIVERSAIRES</p>
-        <p className="font-semibold uppercase">{formattedDate}</p>
+      <div className="flex justify-between items-center mx-4 py-auto p-3">
+        <p className="font-semibold uppercase text-xl">
+          citation et anniversaires
+        </p>
+        <p className="font-semibold uppercase text-xl">{formattedDate}</p>
       </div>
-      <hr className="my-8 h-0.5 border-0 bg-black" />
+      <hr className="my-3 h-0.5 border-0 bg-black" />
     </div>
   );
 };
