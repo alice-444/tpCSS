@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bison";
+  src: url("/font/bison-boldpersonaluse-webfont.eot");
+  src: url("/font/bison-boldpersonaluse-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/bison-boldpersonaluse-webfont.woff2") format("woff2"),
+    url("/font/bison-boldpersonaluse-webfont.woff") format("woff"),
+    url("/font/bison-boldpersonaluse-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
